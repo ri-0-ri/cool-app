@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+
+  background-image: url("/src/assets/wallpaper.webp");
+  position: absolute;
+
+}
+
+
+main{
+  /*background-color: #e3baba;*/
+  background-color: rgba(255, 255, 255, 0.459);
+  height: 400px;
+  width: 700px;
+  /*3.5" X 2.0"*/
+  border-radius: 30px;
+  box-shadow:  0 0 2000px rgba(220, 220, 220, 0.228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftdiv{
+  margin-left: 5%;
+  min-width: 45%;
+  background-color: #1f1f1f;
+  height: 100%;
+  padding-left: 3%;
+  padding-top: 10%;
+}
+
+.leftdiv p{
+  font-size: 22px;
+  color: azure;
+  font-family:monospace
+}
+
+.details{
+  margin-top: 8%;
+}
+.details p{
+  font-size: 15px;
+  margin-left: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.address{
+  margin-top: 3%;
+font-size: 15%;
+padding-bottom: 10%;
+}
+
+.mail{
+  font-size: 22px;
+  color: azure;
+  font-family:monospace
+}
+
+
+.rightdiv{
+  min-width: 50%;
+  /*background-color: rgb(255, 255, 255);*/
+  height: 100%;
+}
+
+.rightdiv a, a:hover{
+  text-decoration: none;
+}
+
+.upper{
+  height: 50%;
+  /*background-color: blue;*/
+}
+
+
+.RCS {
+  font-size: 30px;
+  color: black;
+  margin-top: 0%;
+  font-weight: normal;
+}
+
+.lower{
+  text-align: center;
+}
+
+
+a{
+  text-decoration: none;
+  background-color: none;
+  color: black;
+}
+
+a:hover{
+ font-weight: bolder; 
+ text-decoration: none;
+
+}
+
+
+.img {
+  background-color: none;
+}
+
+.img img {
+  width: 50px;
+  height: 50px;
+  margin-top: 43%;
+  margin-left: 43%;
+}
+

@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #888;
+  /*This is the body*/
+}
+
+main{
+  min-width: 98vw;
+
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.left-pane{
+  margin-left: 1%;
+  margin-top: 1%;
+  background: linear-gradient(#898989, #222222 );
+  border-radius: 30px;
+  height: 95vh;
+  width: 20%;
+  float: left;
+  margin-bottom: 1%;
+}
+
+
+.middle-pane{
+
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 58%;
+}
+
+.right-pane{
+  margin-right: 1%;
+  background: linear-gradient(#898989, #222222 );
+  border-radius: 30px;
+  height: 95vh;
+  width: 20%;
+  float: right;
+}
+
+
+
+.Contact {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-top:  3%;
+  margin-left: 8%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+  cursor: pointer;
+}
+
+.Contact:hover{
+  font-weight: bolder;
+}
+
+.patterns {
+
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 8%;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  max-height: fit-content;
+}
+
+
+
+.ul {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  margin-bottom: 2%;
+  margin-left: 10%;
+
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+li{
+  margin-top: 5%;
+  list-style-type: none;
+  margin-left: 0%;
+  margin-right: 0px;
+  
+}
+
+li:hover{
+  font-weight: bolder;
+}
+
+/*Pattern-list - a tag*/
+.patternslist{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.patternslist:visited {
+  text-decoration: none;
+}
+
+.patternslist:hover {
+  text-decoration: none;
+}
+
+.patternslist:active {
+  text-decoration: none;
+}
+
+
+/*for the logo n name*/
+
+a, a:hover{
+  text-decoration: none;
+} 
+
+a {
+  display: flex;  
+  background-color: none;
+  color: black;
+}
+
+.RCS {
+  align-self: center;
+  margin-left: 15px;
+  font-size: 30px;
+  color: black;
+  
+  margin-top: 10%;
+}
+
+
+.img {
+  display: flex;
+  background-color: none;
+  align-content: center;
+}
+.img img {
+  width: 50px;
+  height: 50px;
+  margin-top: 15%;
+}
+
+
+
+
+
+.logonname {
+  background-color: none;
+  margin-left: 5%;
+  display: flex;
+  align-content: center;
+}
