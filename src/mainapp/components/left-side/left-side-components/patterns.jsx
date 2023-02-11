@@ -1,37 +1,36 @@
 import React, {useState} from "react";
 
-export const Patterns = () =>{
-  const [items, setItems] = useState([
-    { id: 1, text: 'Checker Board' },
-    { id: 2, text: 'Checkerboard Cube' },
-    { id: 3, text: 'Plus Minus' },
-    { id: 4, text: 'Gift Box' },
-    { id: 5, text: 'Cross' },
-    { id: 6, text: '4 Crosses' },
-    { id: 7, text: 'Cube in Cube' },
-    { id: 8, text: 'Cube in Cube in Cube' },
-    { id: 9, text: '4 Spots' },
-    { id: 10, text: '6 Sopts' }
+import '../../../../../src/App.css'
 
-  ]);
+export const Patterns = ({handleClick}) =>
+{
+  const [items] = useState([
+    { id: 1, text: 'Checker Board', array: ['a', 'r', 'R', '..']},
+    { id: 2, text: 'Checkerboard Cube', array: ['b', 'R', 'l', 'r'] },
+    { id: 3, text: 'Plus Minus', array: ['c', 'R', 'r'] },
+    { id: 4, text: 'Gift Box', array: ['d', 'R', ''] },
+    { id: 5, text: 'Cross', array: ['e', 'R', '..'] },
+    { id: 6, text: '4 Crosses', array: ['f', 'R', '..'] },
+    { id: 7, text: 'Cube in Cube', array: ['g', 'R', '..'] },
+    { id: 8, text: 'Cube in Cube in Cube', array: ['h', 'R', '..'] },
+    { id: 9, text: '4 Spots', array: ['i', 'R', '..'] },
+    { id: 10, text: '6 Sopts', array: ['j', 'R', '..'] }
+]);
 
-  function addItem() {
-    setItems([...items, { id: items.length + 1, text: `Item ${items.length + 1}` }]);
-  }
-
-  
   return(
     <div>
       <p className="patterns">
         Patterns
       </p>
-      <a href="" className="patternslist">
+      
         <ul className="ul" id="ul">
-          {items.map(item => (
-            <li key={item.id}>{item.text}</li>
-          ))}
-        </ul>
-      </a> 
+          
+        {items.map((item) => (
+        <li key={item.id} onClick={() => handleClick(item)}>
+          <a className="patternslist">{item.text}</a>
+        </li>
+      ))}
+    </ul>
     </div>
 
   );

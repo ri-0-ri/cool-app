@@ -19,6 +19,8 @@ export default class RubiksCube {
 
     this.initializeRubiksCube();
 
+
+    
     const anim = (t) => {
       TWEEN.update(t);
       requestAnimationFrame(anim);
@@ -27,9 +29,14 @@ export default class RubiksCube {
   }
 
   rotateAroundWorldAxis(cubeGroup, axis) {
+
+    if (cubeGroup.isRotating) return;
+
+
     const start = { rotation: 0 };
     const prev = { rotation: 0 };
     const end = { rotation: Math.PI / 2 };
+    cubeGroup.isRotating = true;
 
     const tween = new TWEEN.Tween(start)
       .to(end, 500)
@@ -57,6 +64,9 @@ export default class RubiksCube {
 
         // NOTE: Keep track of the previous rotation for tweening.
         prev.rotation = rotation;
+      })
+      .onComplete(() => {
+        cubeGroup.isRotating = false;
       });
 
     tween.start();
@@ -76,12 +86,6 @@ export default class RubiksCube {
     );
   }
 
-  cubeInSameXprime(c1, c2) {
-    return (
-      c1.cubeGroup.position.x > c2.cubeGroup.position.x - this.epsilon &&
-      c1.cubeGroup.position.x < c2.cubeGroup.position.x + this.epsilon
-    );
-  }
 
   cubeInSameZ(c1, c2) {
     return (
