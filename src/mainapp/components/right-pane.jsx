@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../../src/App.css'
+import "../../App.css"
 
 export const RightPane = ({currentItem}) =>{
   return(
@@ -8,7 +8,7 @@ export const RightPane = ({currentItem}) =>{
         <p>{currentItem.text}</p>
       </div>
       <div className="inst">
-      <>{currentItem.array?.map(ingredient => <li key={ingredient}>{ingredient}</li>)}</>
+      <>{currentItem.array?.map((ingredient, index) => <li key={index}>{ingredient}</li>)}</>
 
       </div>
     </div>

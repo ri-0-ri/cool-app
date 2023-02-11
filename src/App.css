@@ -183,3 +183,21 @@ a {
  color: #000000;
 
 }
+
+.PatternTitile{
+  margin-left: 5%;
+  margin-top: 5%;
+  height: 50px;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  width: 90%;
+}
+
+.inst{
+  margin-left: 10%;
+  height: 500px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  width: 85%;
+
+}

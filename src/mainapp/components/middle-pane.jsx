@@ -1,5 +1,7 @@
 import React from "react";
-import { CubeApp } from "../../../cube/CubeApp";
+import { CubeApp } from "../../cube/CubeApp";
+import "../../App.css"
+
 
 export const MiddlePane = () =>{
   return(

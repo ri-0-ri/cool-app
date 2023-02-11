@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import { LeftPane } from "./left-side/left-pane";
-import { MiddlePane } from "./middle/middle-pane";
-import { RightPane } from "./right-side/right-pane";
-import '../../../src/App.css'
-import { Patterns } from "./left-side/left-side-components/patterns";
+import {LeftPane} from "./left-pane";
+import {RightPane} from "./right-pane";
+import { MiddlePane } from "./middle-pane";
+import "../../App.css"
+
 
 export const Components = () =>{
   const[currentItem, setCurrentItem] = useState({})
@@ -14,8 +14,7 @@ export const Components = () =>{
 
   return(
     <main>
-      <LeftPane />
-      <Patterns handleClick={handleClick}/>
+      <LeftPane handleClick={handleClick} />
       <MiddlePane/>
       <RightPane currentItem={currentItem}/>
       </main>
