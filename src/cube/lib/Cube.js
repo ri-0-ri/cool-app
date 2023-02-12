@@ -5,17 +5,9 @@ import { vertexShader, fragmentShader } from './Shaders';
 export default class Cube {
   constructor(xOffset, yOffset, zOffset) {
     this.cubeGroup = new THREE.Group();
-    this.uniforms = {
-      opacity: {
-        type: 'f',
-        value: 1.0,
-      },
-    };
 
     const geometry = new THREE.BoxGeometry(1, 1, 1);
     const material = new THREE.ShaderMaterial({
-      transparent: true,
-      uniforms: this.uniforms,
       vertexShader: vertexShader(),
       fragmentShader: fragmentShader(),
     });
@@ -31,9 +23,4 @@ export default class Cube {
     this.cubeGroup.position.y = yOffset;
     this.cubeGroup.position.z = zOffset;
   }
-
-  // highlight() {
-  //   this.cubeMesh.material.transparent = true;
-  //   this.cubeMesh.material.opacity = 0.5;
-  // }
 }

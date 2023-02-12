@@ -40,7 +40,7 @@ main{
 
 .right-pane{
   margin-right: 1%;
-  background: linear-gradient(#898989, #222222 );
+  background: linear-gradient(#898989, #ababab );
   border-radius: 30px;
   height: 95vh;
   width: 20%;
@@ -200,4 +200,9 @@ a {
   color: rgb(0, 0, 0);
   width: 85%;
 
+}
+
+
+.inst li:hover{
+  font-weight: normal;
 }
