@@ -1,4 +1,4 @@
-# runik's cube simulator
+# Rubik's cube simulator
 
 ![image](https://user-images.githubusercontent.com/118845848/221862912-ab61cf6c-d0bf-4654-bc5a-2001e094c133.png)
 Landing Page
